@@ -1,0 +1,129 @@
+
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+}
+
+.register-form {
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.register-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 0.5rem;
+}
+
+
+.register-input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.register-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.6);
+}
+
+.register-btn {
+  background: #667eea;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+}
+
+
+.register-toggle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.register-link {
+  color: #667eea;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 480px) {
+  .register-container {
+    padding:1.5rem;
+  }
+  .register-form {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  .register-title {
+    font-size: 1.5rem;
+  }
+  .register-input {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .register-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .register-form {
+    max-width: 90%;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .register-form {
+    max-width: 450px;
+  }
+}
