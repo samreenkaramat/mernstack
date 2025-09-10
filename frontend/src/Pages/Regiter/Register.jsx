@@ -13,7 +13,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(//"http://localhost:5000/User/register",
-        "https://mernstack-topaz.vercel.app/User",
+        "https://mernstack-topaz.vercel.app/User/register",
          {
         username,
         email,
