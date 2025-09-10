@@ -15,7 +15,7 @@ const Login = () => {
     try {
       const res = await axios.post(
        // "http://localhost:5000/User/login",
-       "https://mernstack-topaz.vercel.app/User",
+       "https://mernstack-topaz.vercel.app/User/login",
         { email, password },
         { withCredentials: true }
       );

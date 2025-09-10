@@ -18,7 +18,9 @@ const Profile = () => {
           return;
         }
 
-        const res = await axios.get("http://localhost:5000/User/profile", {
+        const res = await axios.get(//"http://localhost:5000/User/profile",
+          "https://mernstack-topaz.vercel.app/User/profile",
+           {
           headers: { Authorization: `Bearer ${token}` },
         });
 
