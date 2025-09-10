@@ -16,7 +16,9 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      await axios.post("http://localhost:5000/User/logout", {}, { withCredentials: true });
+      await axios.post(//"http://localhost:5000/User/logout", 
+        "https://mernstack-topaz.vercel.app/User/logout",
+        {}, { withCredentials: true });
       setToken(null);
       localStorage.removeItem("token");
       alert("Logged out successfully");
