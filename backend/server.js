@@ -23,12 +23,13 @@ app.use(
 );
 
 app.use("/User", userroutes);
-app.get("/",()=>requestAnimationFrame,res)=>{
+app.get("/", (req, res) => {
   res.send({
-    activestatus:true,
-    error:false,
-  })
-}
+    activestatus: true,
+    error: false,
+  });
+});
+
 // Database connect
 ConnectDB();
 
